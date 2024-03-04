@@ -4,7 +4,9 @@ import CollectionItem from "./CollectionItem";
 import BrowseAllProducts from "../UI/BrowseAllProducts";
 
 function CollectionsList(props) {
-  const mappedCollections = props.collections.map((collection) => {
+  const mappedCollections = props.collections.filter((collection) => {
+    return collection.node.products.edges[0].node.images.edges.length > 0;
+  }).map((collection) => {
     let imageSrc;
     if (!collection.node.image) {
       imageSrc =
