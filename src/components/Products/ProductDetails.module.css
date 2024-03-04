@@ -1,0 +1,16 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: auto;
+  justify-content: space-between;
+}
+
+@media (min-width: 749px) {
+  .product {
+    flex-direction: row;
+    align-items: start;
+    margin-bottom: 5rem;
+  }
+}

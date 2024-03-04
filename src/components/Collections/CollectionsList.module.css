@@ -1,0 +1,14 @@
+.collections-list {
+  text-align: center;
+}
+
+.collections-list h1 {
+  font-size: 4rem;
+}
+
+.collections-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}

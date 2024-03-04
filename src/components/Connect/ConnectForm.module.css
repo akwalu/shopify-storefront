@@ -1,0 +1,70 @@
+.form {
+  width: 50rem;
+  margin: 5rem auto;
+  height: 100vh;
+  text-align: center;
+}
+
+.form h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+  color: var(--tertiary-color);
+}
+
+.form p {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--quartery-color);
+}
+
+.form button {
+  display: inline-block;
+  width: 50%;
+  margin-top: 1rem;  
+  font: inherit;
+  font-size: 2rem;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 0.5rem;
+}
+
+.form button:hover {
+  background-color: var(--tertiary-color);
+}
+
+.control {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.control label {
+  font-size: 2rem;
+}
+
+.control input {
+  display: inline-block;
+  width: 80%;
+  margin: auto;
+  padding: 0.5rem 1rem;
+  font: inherit;
+  font-size: 2rem;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.form.error .control input {
+  border: 1px solid #ff5349;
+}
+
+p.error {
+  color: #ff5349;
+  font-size: 2rem;
+}
